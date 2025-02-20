@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Podaj kod</title>
+    <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        font-family: "Arial", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffff;
+        color: #000000;
+      }
+
+      .container {
+        text-align: center;
+      }
+
+      .title {
+        font-size: 36px;
+        letter-spacing: 1px;
+        margin-bottom: 15px;
+        font-weight: 400;
+      }
+
+      input[type="text"] {
+        padding: 10px;
+        font-size: 1.2rem;
+        border: 1px solid #000000;
+        border-radius: 5px;
+        background-color: #ffffff;
+        color: #000000;
+        width: 430px;
+        box-sizing: border-box;
+      }
+
+      input[type="text"]:focus {
+        outline: none;
+        border-color: #000000;
+      }
+
+      .button {
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 1.1rem;
+        background-color: transparent;
+        border: 1px solid #000000;
+        color: #000000;
+        cursor: pointer;
+        border-radius: 5px;
+        font-weight: 600;
+        text-transform: uppercase;
+        width: 430px;
+      }
+
+      .button:hover {
+        background-color: #000000;
+        color: #ffffff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">Podaj kod Ziemianinie 👽</div>
+      <input type="text" id="codeInput" placeholder="Wprowadź kod" />
+      <br />
+      <button class="button" onclick="checkCode()">Zatwierdź</button>
+    </div>
+
+    <script>
+      function checkCode() {
+        const code = document.getElementById("codeInput").value;
+        if (code === "2X137HTK25") {
+          localStorage.setItem("dla", "Masera i Kasi");
+          window.location.href = "invite.html";
+        } else if (code === "4HREV8TA25") {
+          localStorage.setItem("dla", "Piciego i Sandry");
+          window.location.href = "invite.html";
+        } else if (code === "9TR4BSAG25") {
+          localStorage.setItem("dla", "Krychy i Wiktorii");
+          window.location.href = "invite.html";
+        } else if (code === "1LN33VCZ25") {
+          localStorage.setItem("dla", "Maćka i Weroniki");
+          window.location.href = "invite.html";
+        } else if (code === "7TKR6SKZ25") {
+          localStorage.setItem("dla", "Piątka i Karoliny");
+          window.location.href = "invite.html";
+        } else if (code === "3YTXK5LM25") {
+          localStorage.setItem("dla", "Bochena");
+          window.location.href = "invite.html";
+        } else if (code === "5HGN4SWU25") {
+          localStorage.setItem("dla", "Majówy");
+          window.location.href = "invite.html";
+        } else if (code === "6YTA1BKP25") {
+          localStorage.setItem("dla", "Olo");
+          window.location.href = "invite.html";
+        } else if (code === "8BV6CSVA25") {
+          localStorage.setItem("dla", "Filipa");
+          window.location.href = "invite.html";
+        } else {
+          alert("Naucz się przepisywać deklu 👽");
+        }
+      }
+    </script>
+  </body>
+</html>
